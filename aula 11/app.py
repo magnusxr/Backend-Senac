@@ -49,7 +49,7 @@ def login():
         cnx.close()
 
         if result and result[0] == 1:
-            session['Usuário logado.'] = usuario
+            session['usuario_logado'] = usuario
             return redirect(url_for('home'))
         
         else:
